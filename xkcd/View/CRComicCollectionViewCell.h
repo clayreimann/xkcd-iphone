@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CRComicCollectionViewCell.h
 //  xkcd
 //
 //  Created by Christopher Reimann on 1/8/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CRComicCollectionViewCell : UICollectionViewCell
 
 @end
-

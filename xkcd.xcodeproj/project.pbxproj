@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		6F37E9441A5EBBF600BEA8BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9431A5EBBF600BEA8BE /* main.m */; };
 		6F37E9471A5EBBF600BEA8BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */; };
-		6F37E94A1A5EBBF600BEA8BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9491A5EBBF600BEA8BE /* ViewController.m */; };
+		6F37E94A1A5EBBF600BEA8BE /* CRComicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */; };
 		6F37E94D1A5EBBF600BEA8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E94B1A5EBBF600BEA8BE /* Main.storyboard */; };
 		6F37E94F1A5EBBF600BEA8BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E94E1A5EBBF600BEA8BE /* Images.xcassets */; };
 		6F37E9521A5EBBF600BEA8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9501A5EBBF600BEA8BE /* LaunchScreen.xib */; };
 		6F37E95E1A5EBBF600BEA8BE /* xkcdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */; };
+		6F37E9681A5EBCE300BEA8BE /* comics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9671A5EBCE300BEA8BE /* comics.json */; };
+		6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4A1A5EC7470091C52F /* CRComicService.m */; };
+		6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4D1A5EC7500091C52F /* CRComic.m */; };
+		6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,21 @@
 		6F37E9431A5EBBF600BEA8BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F37E9451A5EBBF600BEA8BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6F37E9481A5EBBF600BEA8BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6F37E9491A5EBBF600BEA8BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6F37E9481A5EBBF600BEA8BE /* CRComicCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRComicCollectionViewController.h; sourceTree = "<group>"; };
+		6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRComicCollectionViewController.m; sourceTree = "<group>"; };
 		6F37E94C1A5EBBF600BEA8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F37E94E1A5EBBF600BEA8BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F37E9511A5EBBF600BEA8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6F37E9571A5EBBF600BEA8BE /* xkcdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xkcdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F37E95C1A5EBBF600BEA8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcdTests.m; sourceTree = "<group>"; };
+		6F37E9671A5EBCE300BEA8BE /* comics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comics.json; sourceTree = "<group>"; };
+		6FA64D491A5EC7470091C52F /* CRComicService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicService.h; sourceTree = "<group>"; };
+		6FA64D4A1A5EC7470091C52F /* CRComicService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicService.m; sourceTree = "<group>"; };
+		6FA64D4C1A5EC7500091C52F /* CRComic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComic.h; sourceTree = "<group>"; };
+		6FA64D4D1A5EC7500091C52F /* CRComic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComic.m; sourceTree = "<group>"; };
+		6FA64D4F1A5EC7700091C52F /* CRComicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicCollectionViewCell.h; sourceTree = "<group>"; };
+		6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +94,8 @@
 			children = (
 				6F37E9451A5EBBF600BEA8BE /* AppDelegate.h */,
 				6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */,
-				6F37E9481A5EBBF600BEA8BE /* ViewController.h */,
-				6F37E9491A5EBBF600BEA8BE /* ViewController.m */,
+				6F37E9691A5EBD3600BEA8BE /* Views */,
+				6F37E96A1A5EBD6100BEA8BE /* Model */,
 				6F37E94B1A5EBBF600BEA8BE /* Main.storyboard */,
 				6F37E94E1A5EBBF600BEA8BE /* Images.xcassets */,
 				6F37E9501A5EBBF600BEA8BE /* LaunchScreen.xib */,
@@ -117,6 +128,30 @@
 				6F37E95C1A5EBBF600BEA8BE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F37E9691A5EBD3600BEA8BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F37E9481A5EBBF600BEA8BE /* CRComicCollectionViewController.h */,
+				6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */,
+				6FA64D4F1A5EC7700091C52F /* CRComicCollectionViewCell.h */,
+				6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */,
+			);
+			name = Views;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F37E96A1A5EBD6100BEA8BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F37E9671A5EBCE300BEA8BE /* comics.json */,
+				6FA64D491A5EC7470091C52F /* CRComicService.h */,
+				6FA64D4A1A5EC7470091C52F /* CRComicService.m */,
+				6FA64D4C1A5EC7500091C52F /* CRComic.h */,
+				6FA64D4D1A5EC7500091C52F /* CRComic.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F37E94D1A5EBBF600BEA8BE /* Main.storyboard in Resources */,
+				6F37E9681A5EBCE300BEA8BE /* comics.json in Resources */,
 				6F37E9521A5EBBF600BEA8BE /* LaunchScreen.xib in Resources */,
 				6F37E94F1A5EBBF600BEA8BE /* Images.xcassets in Resources */,
 			);
@@ -219,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F37E94A1A5EBBF600BEA8BE /* ViewController.m in Sources */,
+				6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */,
+				6F37E94A1A5EBBF600BEA8BE /* CRComicCollectionViewController.m in Sources */,
 				6F37E9471A5EBBF600BEA8BE /* AppDelegate.m in Sources */,
 				6F37E9441A5EBBF600BEA8BE /* main.m in Sources */,
+				6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */,
+				6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +453,7 @@
 				6F37E9631A5EBBF600BEA8BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F37E9641A5EBBF600BEA8BE /* Build configuration list for PBXNativeTarget "xkcdTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +462,7 @@
 				6F37E9661A5EBBF600BEA8BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

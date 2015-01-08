@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  xkcd
 //
 //  Created by Christopher Reimann on 1/8/15.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface CRComicCollectionViewController : UICollectionViewController
 
-@property (strong, nonatomic) UIWindow *window;
 
 @end
 
