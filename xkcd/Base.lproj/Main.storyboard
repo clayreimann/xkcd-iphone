@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xm3-CH-EUv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LxL-E2-ZTB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Comics-->
@@ -13,20 +14,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lb4-BS-TRS">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="154" height="245"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pqe-xS-hDd">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="comicCell" id="Pqe-xS-hDd" customClass="CRComicCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="154" height="245"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giP-Vn-0D5">
+                                            <rect key="frame" x="8" y="216.5" width="138" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewY-EI-qSR">
+                                            <rect key="frame" x="0.0" y="0.0" width="154" height="208.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lb-1X-AUY">
+                                            <rect key="frame" x="8" y="8" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-hu-eaD">
+                                            <rect key="frame" x="67" y="94.5" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="4Lb-1X-AUY" firstAttribute="top" secondItem="Pqe-xS-hDd" secondAttribute="topMargin" id="6iW-RI-BFg"/>
+                                    <constraint firstItem="4Lb-1X-AUY" firstAttribute="leading" secondItem="Pqe-xS-hDd" secondAttribute="leadingMargin" id="LV7-Ps-6xU"/>
+                                    <constraint firstItem="giP-Vn-0D5" firstAttribute="bottom" secondItem="Pqe-xS-hDd" secondAttribute="bottomMargin" id="Luo-Ju-hCb"/>
+                                    <constraint firstItem="ewY-EI-qSR" firstAttribute="top" secondItem="Pqe-xS-hDd" secondAttribute="topMargin" constant="-8" id="Me2-Bb-ZkF"/>
+                                    <constraint firstItem="giP-Vn-0D5" firstAttribute="trailing" secondItem="Pqe-xS-hDd" secondAttribute="trailingMargin" id="eQC-ir-4fP"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ewY-EI-qSR" secondAttribute="trailing" constant="-8" id="gvX-68-paS"/>
+                                    <constraint firstItem="ewY-EI-qSR" firstAttribute="leading" secondItem="Pqe-xS-hDd" secondAttribute="leadingMargin" constant="-8" id="pI1-YX-iEI"/>
+                                    <constraint firstItem="pxg-hu-eaD" firstAttribute="centerX" secondItem="ewY-EI-qSR" secondAttribute="centerX" id="pbt-ho-hbj"/>
+                                    <constraint firstItem="giP-Vn-0D5" firstAttribute="top" secondItem="ewY-EI-qSR" secondAttribute="bottom" constant="8" id="svO-ZX-etf"/>
+                                    <constraint firstItem="giP-Vn-0D5" firstAttribute="top" secondItem="ewY-EI-qSR" secondAttribute="bottom" constant="8" id="sxF-ep-IHC"/>
+                                    <constraint firstItem="pxg-hu-eaD" firstAttribute="centerY" secondItem="ewY-EI-qSR" secondAttribute="centerY" id="tXf-gN-TBK"/>
+                                    <constraint firstItem="giP-Vn-0D5" firstAttribute="leading" secondItem="Pqe-xS-hDd" secondAttribute="leadingMargin" id="xN2-Rv-AgD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="loadingView" destination="pxg-hu-eaD" id="IWh-dc-KiA"/>
+                                    <outlet property="numberLabel" destination="4Lb-1X-AUY" id="9MB-X3-Tmi"/>
+                                    <outlet property="thumbnailView" destination="ewY-EI-qSR" id="k3r-yd-YSl"/>
+                                    <outlet property="titleLabel" destination="giP-Vn-0D5" id="xhP-75-p2J"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -34,11 +75,28 @@
                             <outlet property="delegate" destination="Xm3-CH-EUv" id="Bxu-8x-z2u"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Comics" id="YyD-WK-hWB"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKU-HI-XFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="639" y="345"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U9f-9c-sPj">
+            <objects>
+                <navigationController hidesBarsWhenVerticallyCompact="YES" id="LxL-E2-ZTB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lJZ-VL-EJe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xm3-CH-EUv" kind="relationship" relationship="rootViewController" id="11z-0S-OKa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzx-fR-RWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="345"/>
         </scene>
     </scenes>
 </document>

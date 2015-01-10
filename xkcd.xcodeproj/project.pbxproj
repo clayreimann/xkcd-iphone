@@ -15,6 +15,9 @@
 		6F37E9521A5EBBF600BEA8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9501A5EBBF600BEA8BE /* LaunchScreen.xib */; };
 		6F37E95E1A5EBBF600BEA8BE /* xkcdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */; };
 		6F37E9681A5EBCE300BEA8BE /* comics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9671A5EBCE300BEA8BE /* comics.json */; };
+		6F7CC9B21A60870A004DED0D /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9AD1A60870A004DED0D /* FSN_categories.m */; };
+		6F7CC9B31A60870A004DED0D /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9AF1A60870A004DED0D /* FSNConnection.m */; };
+		6F7CC9B41A60870A004DED0D /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9B11A60870A004DED0D /* FSNData.m */; };
 		6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4A1A5EC7470091C52F /* CRComicService.m */; };
 		6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4D1A5EC7500091C52F /* CRComic.m */; };
 		6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */; };
@@ -45,6 +48,12 @@
 		6F37E95C1A5EBBF600BEA8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcdTests.m; sourceTree = "<group>"; };
 		6F37E9671A5EBCE300BEA8BE /* comics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comics.json; sourceTree = "<group>"; };
+		6F7CC9AC1A60870A004DED0D /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSN_categories.h; sourceTree = "<group>"; };
+		6F7CC9AD1A60870A004DED0D /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSN_categories.m; sourceTree = "<group>"; };
+		6F7CC9AE1A60870A004DED0D /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNConnection.h; sourceTree = "<group>"; };
+		6F7CC9AF1A60870A004DED0D /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNConnection.m; sourceTree = "<group>"; };
+		6F7CC9B01A60870A004DED0D /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNData.h; sourceTree = "<group>"; };
+		6F7CC9B11A60870A004DED0D /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNData.m; sourceTree = "<group>"; };
 		6FA64D491A5EC7470091C52F /* CRComicService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicService.h; sourceTree = "<group>"; };
 		6FA64D4A1A5EC7470091C52F /* CRComicService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicService.m; sourceTree = "<group>"; };
 		6FA64D4C1A5EC7500091C52F /* CRComic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComic.h; sourceTree = "<group>"; };
@@ -107,6 +116,7 @@
 		6F37E9411A5EBBF600BEA8BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6F7CC9AB1A60870A004DED0D /* FSNetworking */,
 				6F37E9421A5EBBF600BEA8BE /* Info.plist */,
 				6F37E9431A5EBBF600BEA8BE /* main.m */,
 			);
@@ -152,6 +162,19 @@
 				6FA64D4D1A5EC7500091C52F /* CRComic.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F7CC9AB1A60870A004DED0D /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6F7CC9AC1A60870A004DED0D /* FSN_categories.h */,
+				6F7CC9AD1A60870A004DED0D /* FSN_categories.m */,
+				6F7CC9AE1A60870A004DED0D /* FSNConnection.h */,
+				6F7CC9AF1A60870A004DED0D /* FSNConnection.m */,
+				6F7CC9B01A60870A004DED0D /* FSNData.h */,
+				6F7CC9B11A60870A004DED0D /* FSNData.m */,
+			);
+			path = FSNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */,
+				6F7CC9B41A60870A004DED0D /* FSNData.m in Sources */,
+				6F7CC9B31A60870A004DED0D /* FSNConnection.m in Sources */,
 				6F37E94A1A5EBBF600BEA8BE /* CRComicCollectionViewController.m in Sources */,
 				6F37E9471A5EBBF600BEA8BE /* AppDelegate.m in Sources */,
 				6F37E9441A5EBBF600BEA8BE /* main.m in Sources */,
 				6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */,
+				6F7CC9B21A60870A004DED0D /* FSN_categories.m in Sources */,
 				6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
