@@ -16,6 +16,8 @@
 @property (nonatomic) NSString *altText;
 @property (nonatomic) NSURL *imageURL;
 
+@property (nonatomic, readonly) NSString *imageFileName;
+
 /**
  *  Create a new comic based on the JSON received from the backend
  *
@@ -34,5 +36,20 @@
  *  @return the comic's image
  */
 - (UIImage*)getImageWithCompletion:(ImageFetchCompletion)completion;
+
+/**
+ *  Gets the thumbnail associated with the comic
+ *
+ *  @param completion - the completion block to be called if the image has not been
+ *                      downloaded previously
+ *
+ *  @return the comic's image
+ */
+- (UIImage*)getThumbnailWithCompletion:(ImageFetchCompletion)completion;
+
+/**
+ *  Release our references to our images
+ */
+- (void)clearCachedImages;
 
 @end

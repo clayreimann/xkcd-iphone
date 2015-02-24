@@ -7,16 +7,18 @@
 //
 
 @import UIKit;
+#import "NSDictionary+CleanJSON.h"
 
-typedef void (^ImageFetchCompletion)(UIImage* image);
+typedef void (^ImageFetchCompletion)(UIImage* image, UIImage *thumbnail);
 
 @class CRComic;
 @interface CRComicService : NSObject
 
++ (void)updateComicListFromService;
 + (UIImage*)imageForComic:(CRComic*)comic completion:(ImageFetchCompletion)completionBlock;
++ (UIImage*)thumbnailForComic:(CRComic*)comic completion:(ImageFetchCompletion)completionBlock;
+
 - (void)downloadAllComics;
-
-
 - (NSInteger)numberOfComics;
 - (CRComic*)comicForItemAtIndexPath:(NSIndexPath*)indexPath;
 
