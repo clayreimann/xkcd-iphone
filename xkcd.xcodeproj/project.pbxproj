@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		6F37E9441A5EBBF600BEA8BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9431A5EBBF600BEA8BE /* main.m */; };
 		6F37E9471A5EBBF600BEA8BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */; };
-		6F37E94A1A5EBBF600BEA8BE /* CRComicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */; };
+		6F37E94A1A5EBBF600BEA8BE /* CRComicMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E9491A5EBBF600BEA8BE /* CRComicMainViewController.m */; };
 		6F37E94D1A5EBBF600BEA8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E94B1A5EBBF600BEA8BE /* Main.storyboard */; };
 		6F37E94F1A5EBBF600BEA8BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E94E1A5EBBF600BEA8BE /* Images.xcassets */; };
 		6F37E9521A5EBBF600BEA8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9501A5EBBF600BEA8BE /* LaunchScreen.xib */; };
 		6F37E95E1A5EBBF600BEA8BE /* xkcdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */; };
 		6F37E9681A5EBCE300BEA8BE /* comics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F37E9671A5EBCE300BEA8BE /* comics.json */; };
+		6F45BFC91A9CFBDB00E659E7 /* NSDictionary+CleanJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF773031A9CF674001E8BB3 /* NSDictionary+CleanJSON.m */; };
+		6F45BFCC1A9D071A00E659E7 /* CRComicHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F45BFCB1A9D071A00E659E7 /* CRComicHeader.m */; };
 		6F7CC9B21A60870A004DED0D /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9AD1A60870A004DED0D /* FSN_categories.m */; };
 		6F7CC9B31A60870A004DED0D /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9AF1A60870A004DED0D /* FSNConnection.m */; };
 		6F7CC9B41A60870A004DED0D /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CC9B11A60870A004DED0D /* FSNData.m */; };
 		6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4A1A5EC7470091C52F /* CRComicService.m */; };
 		6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D4D1A5EC7500091C52F /* CRComic.m */; };
-		6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */; };
+		6FA64D511A5EC7700091C52F /* CRComicCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA64D501A5EC7700091C52F /* CRComicCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,8 @@
 		6F37E9431A5EBBF600BEA8BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F37E9451A5EBBF600BEA8BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6F37E9481A5EBBF600BEA8BE /* CRComicCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRComicCollectionViewController.h; sourceTree = "<group>"; };
-		6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRComicCollectionViewController.m; sourceTree = "<group>"; };
+		6F37E9481A5EBBF600BEA8BE /* CRComicMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRComicMainViewController.h; sourceTree = "<group>"; };
+		6F37E9491A5EBBF600BEA8BE /* CRComicMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRComicMainViewController.m; sourceTree = "<group>"; };
 		6F37E94C1A5EBBF600BEA8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F37E94E1A5EBBF600BEA8BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F37E9511A5EBBF600BEA8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		6F37E95C1A5EBBF600BEA8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F37E95D1A5EBBF600BEA8BE /* xkcdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcdTests.m; sourceTree = "<group>"; };
 		6F37E9671A5EBCE300BEA8BE /* comics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comics.json; sourceTree = "<group>"; };
+		6F45BFCA1A9D071A00E659E7 /* CRComicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicHeader.h; sourceTree = "<group>"; };
+		6F45BFCB1A9D071A00E659E7 /* CRComicHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicHeader.m; sourceTree = "<group>"; };
 		6F7CC9AC1A60870A004DED0D /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSN_categories.h; sourceTree = "<group>"; };
 		6F7CC9AD1A60870A004DED0D /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSN_categories.m; sourceTree = "<group>"; };
 		6F7CC9AE1A60870A004DED0D /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNConnection.h; sourceTree = "<group>"; };
@@ -58,8 +62,10 @@
 		6FA64D4A1A5EC7470091C52F /* CRComicService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicService.m; sourceTree = "<group>"; };
 		6FA64D4C1A5EC7500091C52F /* CRComic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComic.h; sourceTree = "<group>"; };
 		6FA64D4D1A5EC7500091C52F /* CRComic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComic.m; sourceTree = "<group>"; };
-		6FA64D4F1A5EC7700091C52F /* CRComicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicCollectionViewCell.h; sourceTree = "<group>"; };
-		6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicCollectionViewCell.m; sourceTree = "<group>"; };
+		6FA64D4F1A5EC7700091C52F /* CRComicCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRComicCollectionCell.h; sourceTree = "<group>"; };
+		6FA64D501A5EC7700091C52F /* CRComicCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRComicCollectionCell.m; sourceTree = "<group>"; };
+		6FF773031A9CF674001E8BB3 /* NSDictionary+CleanJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CleanJSON.m"; sourceTree = "<group>"; };
+		6FF773041A9CF69A001E8BB3 /* NSDictionary+CleanJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CleanJSON.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 			children = (
 				6F37E9451A5EBBF600BEA8BE /* AppDelegate.h */,
 				6F37E9461A5EBBF600BEA8BE /* AppDelegate.m */,
+				6FF773041A9CF69A001E8BB3 /* NSDictionary+CleanJSON.h */,
+				6FF773031A9CF674001E8BB3 /* NSDictionary+CleanJSON.m */,
 				6F37E9691A5EBD3600BEA8BE /* Views */,
 				6F37E96A1A5EBD6100BEA8BE /* Model */,
 				6F37E94B1A5EBBF600BEA8BE /* Main.storyboard */,
@@ -143,10 +151,12 @@
 		6F37E9691A5EBD3600BEA8BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6F37E9481A5EBBF600BEA8BE /* CRComicCollectionViewController.h */,
-				6F37E9491A5EBBF600BEA8BE /* CRComicCollectionViewController.m */,
-				6FA64D4F1A5EC7700091C52F /* CRComicCollectionViewCell.h */,
-				6FA64D501A5EC7700091C52F /* CRComicCollectionViewCell.m */,
+				6F37E9481A5EBBF600BEA8BE /* CRComicMainViewController.h */,
+				6F37E9491A5EBBF600BEA8BE /* CRComicMainViewController.m */,
+				6F45BFCA1A9D071A00E659E7 /* CRComicHeader.h */,
+				6F45BFCB1A9D071A00E659E7 /* CRComicHeader.m */,
+				6FA64D4F1A5EC7700091C52F /* CRComicCollectionCell.h */,
+				6FA64D501A5EC7700091C52F /* CRComicCollectionCell.m */,
 			);
 			name = Views;
 			path = View;
@@ -278,15 +288,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F45BFC91A9CFBDB00E659E7 /* NSDictionary+CleanJSON.m in Sources */,
+				6F45BFCC1A9D071A00E659E7 /* CRComicHeader.m in Sources */,
 				6FA64D4B1A5EC7470091C52F /* CRComicService.m in Sources */,
 				6F7CC9B41A60870A004DED0D /* FSNData.m in Sources */,
 				6F7CC9B31A60870A004DED0D /* FSNConnection.m in Sources */,
-				6F37E94A1A5EBBF600BEA8BE /* CRComicCollectionViewController.m in Sources */,
+				6F37E94A1A5EBBF600BEA8BE /* CRComicMainViewController.m in Sources */,
 				6F37E9471A5EBBF600BEA8BE /* AppDelegate.m in Sources */,
 				6F37E9441A5EBBF600BEA8BE /* main.m in Sources */,
 				6FA64D4E1A5EC7500091C52F /* CRComic.m in Sources */,
 				6F7CC9B21A60870A004DED0D /* FSN_categories.m in Sources */,
-				6FA64D511A5EC7700091C52F /* CRComicCollectionViewCell.m in Sources */,
+				6FA64D511A5EC7700091C52F /* CRComicCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
