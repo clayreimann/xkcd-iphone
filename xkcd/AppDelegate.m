@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CRComicService.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,15 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    // install a timer to periodically update the list of comics
+    [NSTimer scheduledTimerWithTimeInterval:3600 target:[NSBlockOperation blockOperationWithBlock:^{
+        [CRComicService updateComicListFromService];
+    }] selector:@selector(main) userInfo:nil repeats:YES];
+    
+    // update the comic list now
+    [CRComicService updateComicListFromService];
+    
     return YES;
 }
 
