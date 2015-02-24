@@ -9,7 +9,7 @@
 @import UIKit;
 
 @class CRComic;
-@interface CRComicCollectionViewCell : UICollectionViewCell
+@interface CRComicCollectionCell : UICollectionViewCell
 
 @property (nonatomic) IBOutlet UILabel *numberLabel;
 @property (nonatomic) IBOutlet UILabel *titleLabel;

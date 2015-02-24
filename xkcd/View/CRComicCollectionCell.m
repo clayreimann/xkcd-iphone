@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Clay Reimann. All rights reserved.
 //
 
-#import "CRComicCollectionViewCell.h"
+#import "CRComicCollectionCell.h"
 
 #import "CRComic.h"
 
-@implementation CRComicCollectionViewCell
+@implementation CRComicCollectionCell
 
 - (void)configureWithComic:(CRComic *)comic {
-    UIImage *comicImage = [comic getImageWithCompletion:^(UIImage *image) {
-        self.thumbnailView.image = image;
+    UIImage *comicImage = [comic getThumbnailWithCompletion:^(UIImage *image, UIImage *thumbnail) {
+        self.thumbnailView.image = thumbnail;
         [self.loadingView stopAnimating];
     }];
     
