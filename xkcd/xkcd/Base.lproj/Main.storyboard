@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xn6-v1-6uG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HKT-eF-v2T">
+            <objects>
+                <navigationController id="Xn6-v1-6uG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mEF-tm-LW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ka3-L4-4C5" kind="relationship" relationship="rootViewController" id="htC-2P-DL9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aa6-LQ-GtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="30"/>
+        </scene>
+        <!--XKCD-->
+        <scene sceneID="6me-Bf-3xQ">
+            <objects>
+                <viewController title="XKCD" id="Ka3-L4-4C5" customClass="ComicCollectionViewController" customModule="xkcd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M23-BI-ilm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZxV-j2-Dv1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUX-Vh-ldl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-jh-aXn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D9z-Og-mkj">
+                                    <size key="itemSize" width="178" height="87"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCell" id="xTN-H2-pBk" customClass="ComicCell" customModule="xkcd" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNz-Ua-U1E">
+                                                    <rect key="frame" x="8" y="33" width="162" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="dNz-Ua-U1E" firstAttribute="trailing" secondItem="xTN-H2-pBk" secondAttribute="trailingMargin" id="2ns-wE-n3c"/>
+                                            <constraint firstItem="dNz-Ua-U1E" firstAttribute="top" secondItem="xTN-H2-pBk" secondAttribute="topMargin" constant="25" id="3ML-Cv-yHp"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="dNz-Ua-U1E" secondAttribute="bottom" constant="25" id="MeX-Xz-Jz6"/>
+                                            <constraint firstItem="dNz-Ua-U1E" firstAttribute="leading" secondItem="xTN-H2-pBk" secondAttribute="leadingMargin" id="eZc-pu-91a"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="labelComic" destination="dNz-Ua-U1E" id="Rsw-6f-Za2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ka3-L4-4C5" id="ZDl-Yx-kY9"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GkK-jh-aXn" firstAttribute="leading" secondItem="dUX-Vh-ldl" secondAttribute="leadingMargin" constant="-16" id="9HC-sJ-0Mh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GkK-jh-aXn" secondAttribute="bottom" constant="-20" id="A8K-YN-cfA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GkK-jh-aXn" secondAttribute="trailing" constant="-16" id="esv-0l-z81"/>
+                            <constraint firstItem="GkK-jh-aXn" firstAttribute="top" secondItem="dUX-Vh-ldl" secondAttribute="topMargin" constant="20" id="wjH-rJ-AiE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="XKCD" id="v19-sb-yJe"/>
+                    <connections>
+                        <outlet property="collectionView" destination="GkK-jh-aXn" id="1du-Rh-mvR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KB2-Qp-KNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="30"/>
+        </scene>
+    </scenes>
+</document>
